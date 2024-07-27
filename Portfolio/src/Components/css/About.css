@@ -1,0 +1,159 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .about-containr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .item, .skills {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    margin: 20px 0;
+    animation-duration: 2.5s;  /* Slower animation duration */
+    animation-fill-mode: both;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: row;
+    animation-name: slideInFromLeft;
+  }
+  
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: slideInFromRight;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .text h1, .skills h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .text a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .text a:hover {
+    background-color: #0056b3;
+  }
+  
+  .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation-name: zoomIn;  /* Add zoom animation to the image container */
+    animation-duration: 3s;  /* Match the overall animation duration */
+    animation-fill-mode: both;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .skills .skill-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .skills .skill-item h3 {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: transform 1s ease-in-out; 
+    box-shadow: 0px 0px 10px rgb(207, 150, 150);
+}
+
+.skills .skill-item h3:hover {
+    transform: scale(1.2);
+}
+
+  .skills .skill-item h3:nth-child(odd){
+    background-color: rgba(120, 211, 230, 0.625);
+  }
+
+  .skills .skill-item h3:nth-child(even){
+    background-color: rgba(221, 93, 163, 0.625);
+  }
+
+  @media (max-width: 768px) {
+    .item {
+      flex-direction: column-reverse;
+    }
+  
+    .text, .image {
+      padding: 20px;
+    }
+  }
+  

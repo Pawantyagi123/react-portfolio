@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "image": "/Images/Image1.png",
+      "link": "https://music-app-flax-delta.vercel.app/",
+      "title": "Music Player",
+      "description": "This Music Player is a dynamic and engaging web application developed using React. It features a clean and intuitive interface that allows users to easily browse, play, and manage their music library. The application uses a JSON file to store and retrieve music data, including song titles, artists, albums, and durations. Key features include playlist creation, play/pause functionality, skip tracks, and volume control. With its responsive design and smooth performance, this music player provides an enjoyable listening experience for users on both desktop and mobile devices.",
+      "languages": ["React", "CSS", "Html"],
+      "github": "https://github.com/Pawantyagi123/music-app"
+    },
+    {
+      "id": 2,
+      "image": "/Images/image2.png",
+      "link": "https://weather-app-alpha-eight-89.vercel.app/",
+      "title": "Weather app",
+      "description": "This Weather App is a straightforward and user-friendly web application developed using HTML, CSS, and JavaScript. It provides users with current weather information and forecasts for various locations. Key features include displaying the current temperature, weather conditions, humidity, and wind speed. The app fetches accurate and up-to-date weather data from a reliable weather API and presents it in a clean and responsive design. The intuitive interface ensures that users can quickly and easily check the weather conditions in their desired location.",
+      "languages": ["Html", "CSS", "JavaScript"],
+      "github": "https://github.com/Pawantyagi123/weather-app"
+    },
+    {
+      "id": 3,
+      "image": "/Images/image3.png",
+      "link": "https://react-luxury-villa.vercel.app/",
+      "title": "Luxury villas",
+      "description": "This Luxury Villas Website is an elegant and sophisticated web application developed using React. It showcases a curated selection of luxury villas available for rent or purchase, designed to appeal to discerning clients seeking high-end properties. Key features include high-resolution image galleries, detailed property descriptions, virtual tours, and an easy-to-use contact form for inquiries. The website's sleek and modern design, combined with smooth navigation and responsive layout, ensures an immersive browsing experience. Whether users are looking for a vacation rental or a permanent residence, this website provides all the information and visuals needed to make an informed decision.",
+      "languages": ["Html", "CSS", "React"],
+      "github": "https://github.com/Pawantyagi123/React-Luxury-Villa"
+    },
+    {
+      "id": 4,
+      "image": "/Images/image4.png",
+      "link": "https://e-commerce-brown-two-12.vercel.app/",
+      "title": "E-commerce",
+      "description": "This E-commerce Website is a modern and user-friendly web application developed using React and Redux Toolkit. It features a two-page layout: the first page displays a list of items categorized for easy browsing, while the second page is dedicated to the shopping cart. Users can effortlessly browse through different categories, view detailed product information, and add items to their cart. The integration of Redux Toolkit ensures efficient and seamless state management for the cart component, allowing users to easily add, remove, and update items. With its clean design and intuitive navigation, this website provides a streamlined and enjoyable online shopping experience.",
+      "languages": ["Html", "CSS", "React","Redux"],
+      "github": "https://github.com/Pawantyagi123/E-commerce"
+    },
+    {
+      "id": 5,
+      "image": "/Images/image5.png",
+      "link": "https://food-reccipe.vercel.app/",
+      "title": "Food-recipe",
+      "description": "This Food Recipe Website is an innovative and user-friendly web application developed using React and Hooks. It leverages a powerful food API to provide users with a vast collection of recipes from around the world. Key features include searching for recipes by ingredients, cuisine, or dietary preferences, as well as detailed recipe instructions and nutritional information. The implementation of React Hooks ensures efficient state management and enhances the overall performance of the application. With a sleek design and easy navigation, this website offers a delightful culinary experience for food enthusiasts and home cooks alike.",
+      "languages": ["Html", "CSS", "React"],
+      "github": "https://github.com/Pawantyagi123/food-reccipe"
+    },
+    {
+      "id": 6,
+      "image": "/Images/image6.png",
+      "link": "https://todo-app-using-react-zeta.vercel.app/",
+      "title": "Todo App",
+      "description": "This Todo Website is a dynamic and responsive web application developed using React and Hooks. It enables users to efficiently manage their tasks with an intuitive interface and seamless user experience. Key features of the application include adding, editing, and deleting. The use of React Hooks ensures state management is both simple and effective, enhancing the overall performance and maintainability of the codebase. The website's clean design and user-friendly navigation make it an ideal tool for staying organized and productive.",
+      "languages": ["Html", "CSS", "React"],
+      "github": "https://github.com/Pawantyagi123/Todo-app-using-React"
+    }
+  ]
+  

@@ -29,20 +29,34 @@ export default function Home() {
         </Fade>
        
         <div className="social-links">
-          <div className="hero-social-link">
-            <a href="https://www.linkedin.com/in/pawan-tyagi-196606270" className="home-hero__social-icon-link" target="_blank"><FaLinkedin/></a>
-          </div>
+      <div className="hero-social-link">
+        <a href="https://www.linkedin.com/in/pawan-tyagi-196606270" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin />
+          <span className="tooltiptext">LinkedIn</span>
+        </a>
+      </div>
 
-          <div className="hero-social-link">
-            <a href="https://x.com/Pawantyagi15426" className="home-hero__social-icon-link" target="_blank"><FaTwitter/></a>
-          </div>
-          <div className="hero-social-link">
-            <a href="https://github.com/Pawantyagi123" className="home-hero__social-icon-link" target="_blank"><FaGithub/></a>
-          </div>
-          <div className="hero-social-link">
-            <a href="https://dev.to/pawantyagi123" className="home-hero__social-icon-link" target="_blank"><FaBookOpen/></a>
-          </div>
-        </div>
+      <div className="hero-social-link">
+        <a href="https://x.com/Pawantyagi15426" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
+          <FaTwitter />
+          <span className="tooltiptext">Twitter</span>
+        </a>
+      </div>
+
+      <div className="hero-social-link">
+        <a href="https://github.com/Pawantyagi123" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
+          <FaGithub />
+          <span className="tooltiptext">GitHub</span>
+        </a>
+      </div>
+
+      <div className="hero-social-link">
+        <a href="https://dev.to/pawantyagi123" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
+          <FaBookOpen />
+          <span className="tooltiptext">Dev.to</span>
+        </a>
+      </div>
+    </div>
         
       </div>
     </div>

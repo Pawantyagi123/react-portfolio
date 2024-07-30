@@ -104,10 +104,6 @@ body{
     padding: 1rem;
     border-radius: 5px;
     font-size: 30px;
-    transition: filter 0.7s;
-  }
-  .home-hero__social-icon-link:hover{
-    filter: drop-shadow(0px 0px 10px rgb(96, 183, 240));
   }
 
   .home-para{
@@ -155,39 +151,3 @@ body{
   
 
 
-.hero-social-link .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 35%; /* Position the tooltip above the icon */
-  left: 215%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out;
-  font-size: 20px;
-}
-
-.hero-social-link .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 35%; /* Position the arrow vertically centered to the tooltip */
-  left: -8%; /* Adjust position to match the new tooltip position */
-  margin-left: 0px;
-  border-width: 5px;
-  border-style: solid;
-  border-color:  black transparent transparent;
-  transform: rotate(90deg);
-  z-index: 1; /* Adjusted arrow color to match tooltip background */
-}
-
-/* Show the tooltip text when hovering */
-.hero-social-link:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}

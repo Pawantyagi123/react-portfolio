@@ -4,6 +4,8 @@ import { FaTwitter,FaLinkedin,FaGithub } from "react-icons/fa6";
 import { FaBookOpen } from "react-icons/fa";
 import "../Components/css/home.css";
 import { Fade } from 'react-awesome-reveal';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 export default function Home() {
   return (
@@ -30,31 +32,36 @@ export default function Home() {
        
         <div className="social-links">
       <div className="hero-social-link">
+      <Tippy placement='right' content={<span style={{color: 'orange'}}>Linkdin</span>} >
+
         <a href="https://www.linkedin.com/in/pawan-tyagi-196606270" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
-          <span className="tooltiptext">LinkedIn</span>
         </a>
+        </Tippy>
       </div>
 
       <div className="hero-social-link">
+      <Tippy placement='right' content={<span style={{color: 'orange'}}>Twitter</span>} >
         <a href="https://x.com/Pawantyagi15426" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
           <FaTwitter />
-          <span className="tooltiptext">Twitter</span>
         </a>
+        </Tippy>
       </div>
 
       <div className="hero-social-link">
+      <Tippy placement='right' content={<span style={{color: 'orange'}}>Github</span>} >
         <a href="https://github.com/Pawantyagi123" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
           <FaGithub />
-          <span className="tooltiptext">GitHub</span>
         </a>
+        </Tippy>
       </div>
 
       <div className="hero-social-link">
+      <Tippy placement='right' content={<span style={{color: 'orange'}}>Dev.to</span>} >
         <a href="https://dev.to/pawantyagi123" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
           <FaBookOpen />
-          <span className="tooltiptext">Dev.to</span>
         </a>
+        </Tippy>
       </div>
     </div>
         

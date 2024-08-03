@@ -24,7 +24,9 @@ export default function About() {
           <h3>CSS</h3>
           <h3>JAVASCRIPT</h3>
           <h3>REACT</h3>
+          <h3>Redux Toolkit</h3>
           <h3>BOOTSTRAP</h3>
+          <h3>Material Ui</h3>
           <h3>NODE</h3>
           <h3>EXPRESS</h3>
           <h3>MONGODB</h3>
@@ -32,6 +34,7 @@ export default function About() {
           <h3>Github</h3>
           <h3>VERCEL</h3>
           <h3>Netlify</h3>
+          <h3>Postman</h3>
         </div>
       </div>
     </div>

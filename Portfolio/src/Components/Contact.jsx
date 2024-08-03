@@ -2,6 +2,8 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import toast from "react-hot-toast";
 import "../Components/css/Contact.css";
+import { IoPerson } from "react-icons/io5";
+import { MdEmail, MdMessage, MdPhone, MdSubject } from "react-icons/md";
 
 export default function Contact() {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -39,79 +41,83 @@ export default function Contact() {
   return (
     <div className='contact-container'>
       <h1>Contact me</h1>
-      
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='input'>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name"><IoPerson/></label>
           <input
             type="text"
             id='name'
             {...register('name', {
-              required: "Name is required",
+              required: "Please enter your name...",
               pattern: {
                 value: /^[A-Za-z]+$/,
                 message: "Name must contain only letters"
               }
             })}
+            placeholder='name'
           />
           {errors.name && <span>{errors.name.message}</span>}
         </div>
         <div className='input'>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email"><MdEmail/></label>
           <input
             type="email"
             id='email'
             {...register('email', {
-              required: "Email is required",
+              required: "Please enter your email...",
               pattern: {
                 value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                 message: "Invalid email address"
               }
             })}
+            placeholder='email'
           />
           {errors.email && <span>{errors.email.message}</span>}
         </div>
         <div className='input'>
-          <label htmlFor="phone">Phone</label>
+          <label htmlFor="phone"><MdPhone/></label>
           <input
             type="text"
             id='phone'
             {...register('phone', {
-              required: "Phone number is required",
+              required: "Phone number is required...",
               minLength: {
                 value: 10,
                 message: "Phone number must be 10 digits"
               }
             })}
+            placeholder='phone number'
           />
           {errors.phone && <span>{errors.phone.message}</span>}
         </div>
         <div className='input'>
-          <label htmlFor="subject">Subject</label>
+          <label htmlFor="subject"><MdSubject/></label>
           <input
             type="text"
             id='subject'
             {...register('subject', {
-              required: "Subject is required",
+              required: "Please provide subject...",
               minLength: {
                 value: 8,
                 message: "Subject must be at least 8 characters long"
               }
             })}
+            placeholder='subject'
           />
           {errors.subject && <span>{errors.subject.message}</span>}
         </div>
         <div className='input'>
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message"><MdMessage/></label>
           <textarea
             id="message"
             {...register('message', {
-              required: "Message is required",
+              required: "Please enter message...",
               minLength: {
                 value: 10,
                 message: "Message must be at least 10 characters long"
               }
             })}
+            placeholder='message'
           ></textarea>
           {errors.message && <span>{errors.message.message}</span>}
         </div>

@@ -27,7 +27,7 @@
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
     animation: fadeIn 1s ease-in-out;
   }
   
@@ -65,9 +65,10 @@
   
   .input label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     font-weight: bold;
-    color: #555;
+    color: #5781d0;
+    font-size: 25px;
   }
   
   .input input,

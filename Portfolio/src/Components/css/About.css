@@ -37,14 +37,14 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f9;
+    background-color: #0d0d0e;
     padding: 20px;
     overflow: hidden;
   }
   
   .item, .skills {
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #090909;
+    box-shadow: 0 4px 8px rgba(241, 237, 237, 0.1);
     border-radius: 10px;
     overflow: hidden;
     max-width: 900px;
@@ -75,13 +75,13 @@
   .text h1, .skills h1 {
     margin-bottom: 20px;
     font-size: 2.5rem;
-    color: #333;
+    color: #f5eeee;
   }
   
   .text p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #555;
+    color: #f5eeee;
   }
   
   .text a {
@@ -109,8 +109,13 @@
     animation-name: zoomIn;  /* Add zoom animation to the image container */
     animation-duration: 3s;  /* Match the overall animation duration */
     animation-fill-mode: both;
+    filter: brightness(50%);
+    transition: filter 0.7s ease-in-out;
   }
   
+  .image:hover{
+    filter: brightness(100%);
+  }
   .image img {
     max-width: 100%;
     height: auto;
@@ -129,10 +134,9 @@
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
-    color: #333;
+    color: #f6efef;
     cursor: pointer;
     transition: transform 1s ease-in-out; 
-    box-shadow: 0px 0px 10px rgb(207, 150, 150);
 }
 
 .skills .skill-item h3:hover {
@@ -140,11 +144,11 @@
 }
 
   .skills .skill-item h3:nth-child(odd){
-    background-color: rgba(120, 211, 230, 0.625);
+    background-color: rgb(120, 212, 230);
   }
 
   .skills .skill-item h3:nth-child(even){
-    background-color: rgba(221, 93, 163, 0.625);
+    background-color: rgb(221, 93, 163);
   }
 
   @media (max-width: 768px) {

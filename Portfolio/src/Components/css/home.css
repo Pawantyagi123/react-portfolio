@@ -7,11 +7,11 @@ body{
   align-items: center;
   flex-direction: column;
   height: 90vh;
-  background: url("../Image/background.jpg");
+  /* background: url("../Image/background.jpg"); */
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .home-text {
@@ -30,9 +30,10 @@ body{
   margin-bottom: 0.5em;
   color: #0a0909;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.518);
+  box-shadow: 0px 0px 8px 4px rgba(244, 242, 242, 0.518);
   padding: 10px;
   animation: fadeInScale 3s ease-in-out forwards 1;
+  background-color: white;
 }
 
 @keyframes fadeInScale {
@@ -50,7 +51,7 @@ body{
   
   .home-text p {
     font-size: 1.5em;
-    color: #0c0c0c;
+    color: #f5eeee;
     width: 80%;
   }
 
@@ -62,7 +63,7 @@ body{
     background-color: purple;
     border: none;
     border-radius: 5px;
-    padding: 10px 40px;
+    padding: 10px 50px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
@@ -70,7 +71,7 @@ body{
   }
   .link:hover{
    animation: jump 1 1s linear;
- 
+ box-shadow: 0px 0px 10px 4px rgba(128, 0, 128, 0.799);
   }
 @keyframes jump{
   0%{
@@ -88,9 +89,10 @@ body{
     top: 50%;
    transform: translateY(-50px);
     background: #f9f6f6;
-    box-shadow: rgba(14, 14, 15, 0.545) 0px 0px 29px ;
+    box-shadow: rgba(238, 238, 241, 0.545) 0px 0px 29px ;
     padding: .5rem;
     border-radius: 5px;
+   
   }
   .hero-social-links {
     width: 5rem;

@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="home-container">
       <div className="home-hero">
-      <Fade direction="down" cascade>
+      <Fade direction="down" cascade duration={2000}>
         <div className="home-text">
           <h1>HEY, I'M Pawan Tyagi</h1>
         

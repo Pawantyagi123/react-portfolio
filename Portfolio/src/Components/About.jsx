@@ -1,7 +1,7 @@
 import React from 'react'
 import profile from "../Image/profile.png"
 import "../Components/css/About.css"
-import resume from "/src/file/resume.pdf"
+import resume from "../file/resume (2).pdf"
 import { FaDownload } from "react-icons/fa6";
 
 export default function About() {

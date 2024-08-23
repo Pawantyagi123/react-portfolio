@@ -4,6 +4,8 @@ import toast from "react-hot-toast";
 import "../Components/css/Contact.css";
 import { IoPerson } from "react-icons/io5";
 import { MdEmail, MdMessage, MdPhone, MdSubject } from "react-icons/md";
+import contact from "../Image/contact.png"
+import { Fade } from 'react-awesome-reveal';
 
 export default function Contact() {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -39,8 +41,11 @@ export default function Contact() {
   };
 
   return (
+    
     <div className='contact-container'>
-      <h1>Contact me</h1>
+      <Fade direction='down' cascade duration={2000}>
+      <img src={contact} alt="" />
+      </Fade>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='input'>
           <label htmlFor="name"><IoPerson/></label>

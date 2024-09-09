@@ -67,7 +67,7 @@ nav {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(245, 231, 231);
+  background-color: purple;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

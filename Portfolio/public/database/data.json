@@ -52,6 +52,15 @@
       "description": "This Todo Website is a dynamic and responsive web application developed using React and Hooks. It enables users to efficiently manage their tasks with an intuitive interface and seamless user experience. Key features of the application include adding, editing, and deleting. The use of React Hooks ensures state management is both simple and effective, enhancing the overall performance and maintainability of the codebase. The website's clean design and user-friendly navigation make it an ideal tool for staying organized and productive.",
       "languages": ["Html", "CSS", "React"],
       "github": "https://github.com/Pawantyagi123/Todo-app-using-React"
+    },
+    {
+      "id": 7,
+      "image":"/Images/image7.png",
+      "link": "https://blogproject-chi.vercel.app/",
+      "title": "Blog Project",
+      "description": "This Blog Project is a modern and user-friendly web application developed using React and Redux Toolkit and for backend I have use appwrite service like user authentication and database for storing the post data and also Tinymc for post description. It was a user-friendly and responsive website for both mobile and desktop. For css I have use Tailwind css",
+      "languages": ["React", "Redux Toolkit", "Tailwind css"],
+      "github": "https://github.com/Pawantyagi123/Blogproject"
     }
   ]
   

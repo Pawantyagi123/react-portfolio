@@ -1,24 +1,4 @@
-@keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slideInFromRight {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
+
   
   @keyframes zoomIn {
     0% {
@@ -71,7 +51,9 @@
     flex: 1;
     padding: 40px;
   }
-  
+  .text h1{
+    color: purple;
+  }
   .text h1, .skills h1 {
     margin-bottom: 20px;
     font-size: 2.5rem;
@@ -134,7 +116,7 @@
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
-    color: #f6efef;
+    color: #040404;
     cursor: pointer;
     transition: transform 1s ease-in-out; 
 }

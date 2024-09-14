@@ -11,7 +11,7 @@
     }
   }
   
-  .about-containr {
+  .about-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,6 +20,12 @@
     background-color: #0d0d0e;
     padding: 20px;
     overflow: hidden;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    animation-name: slideInFromLeft;
   }
   
   .item, .skills {
@@ -34,11 +40,6 @@
     animation-fill-mode: both;
   }
   
-  .item {
-    display: flex;
-    flex-direction: row;
-    animation-name: slideInFromLeft;
-  }
   
   .skills {
     display: flex;
@@ -47,11 +48,11 @@
     animation-name: slideInFromRight;
   }
   
-  .text {
+   .text {
     flex: 1;
     padding: 40px;
   }
-  .text h1{
+  .item .text h1{
     color: purple;
   }
   .text h1, .skills h1 {

@@ -1,114 +1,72 @@
 
-/* Navbar.css */
-
-/* Basic styling for the navigation bar */
+/* General styles for the navigation */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(11, 11, 11);
-  padding: 10px 15px;
-  height: 70px;
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 2;
+  padding: 10px 20px;
+  background-color: #0a0a0a;
+  color: white;
+z-index: 2;
 }
 
 .logo {
-  margin: 10px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  color: white;
-  font-size: 1.5rem;
-}
-
-.logo img {
   border-radius: 50%;
 }
 
-.logo h4{
-  font-size: 1.5rem;
+.logo h4 {
+  margin-left: 10px;
+  color: white;
 }
 
-.links {
-  display: flex;
-}
-
-.links ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.NavLinks ul {
+  list-style-type: none;
   display: flex;
   gap: 20px;
 }
 
-.links li {
-  margin: 0 10px;
-}
-
-.links a {
-  color: rgb(245, 231, 231);
+.NavLinks ul li a {
+  color: white;
   text-decoration: none;
-  font-size: 22px;
-  font-weight: bold;
   position: relative;
+  font-size: 1.5rem;
 }
 
-.links a::after {
+.NavLinks ul li a::after {
   content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
+  display: block;
+  width: 0;
   height: 2px;
-  bottom: 0;
+  background: white;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: -5px;
   left: 0;
-  background-color: purple;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
 }
 
-.links a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.NavLinks ul li a:hover::after {
+  width: 100%;
 }
 
-.hamburger {
-  display: none;
-  background: rgb(255, 0, 0);
-  border: none;
-  position: fixed;
-  right: -20px;
-  width: 50px;
-  height: 30px;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-  cursor: pointer;
-  z-index: 2;
-  transition: width 0.6s;
+/* Active link styling */
+.NavLinks a.active {
+  color: purple;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
-.hamburger:hover{
-  width: 60px;
-}
-
-/* Sidebar styling for smaller screens */
+/* Sidebar styles */
 .sidebar {
   position: fixed;
   top: 0;
-  right: -250px;
+  right: -100%;
   width: 250px;
   height: 100%;
-  background-color: black;
-  overflow: hidden;
-  transition: 0.4s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #111010;
+  color: white;
+  transition: right 0.3s ease;
   z-index: 2;
 }
 
@@ -116,54 +74,101 @@ nav {
   right: 0;
 }
 
-.close-icon {
-  color: rgb(250, 244, 244);
-  font-size: 30px;
-  cursor: pointer;
-  align-self: flex-start;
-  margin: 10px;
-}
-
 .sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-  width: 100%;
+  list-style-type: none;
+  padding: 20px;
 }
 
-.sidebar li {
-  width: 100%;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.81);
+.sidebar ul li {
+  margin: 20px 0;
+  border-bottom: 2px solid white;
 }
 
-.sidebar a {
-  display: block;
-  color: rgb(231, 222, 222);
-  padding: 15px;
+.sidebar ul li a {
+  color: white;
   text-decoration: none;
-  font-size: 18px;
-  text-align: start;
+  display: block;
+  padding: 10px;
+  font-size: 1.5rem;
 }
 
-.sidebar a:hover {
-  text-decoration: underline;
+.sidebar ul li a:hover {
+  background-color: #080808;
+  border-radius: 20px;
 }
 
+.sidebar ul li a.active {
+  color: purple;
+  font-weight: bold;
+}
+
+/* Button styling for the hamburger menu */
+.hamburger-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjust the size and color of the hamburger icon */
+.hamburger-icon {
+  width: 32px; /* Adjust size as needed */
+  height: 32px; /* Adjust size as needed */
+  color: white; /* Set icon color */
+}
+
+/* Make sure the button is only visible on smaller screens */
 @media (max-width: 768px) {
-  .links {
-      display: none;
+  .hamburger-button {
+    display: flex;
+  }
+
+  .NavLinks {
+    display: none;
+  }
+}
+
+/* Hide the hamburger button on larger screens */
+@media (min-width: 768px) {
+  .hamburger-button {
+    display: none;
+  }
+
+  .NavLinks {
+    display: block;
+  }
+}
+
+
+
+
+.close-icon {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .NavLinks {
+    display: none;
   }
 
   .hamburger {
-      display: block;
-  }
-  .logo h4{
-    font-size: 1rem;
+    display: block;
   }
 }
 
 @media (min-width: 768px) {
-  .sidebar {
-      display: none;
+  .hamburger {
+    display: none;
+  }
+
+  .NavLinks {
+    display: block;
   }
 }

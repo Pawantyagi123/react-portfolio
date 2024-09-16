@@ -28,8 +28,8 @@
     animation-name: slideInFromLeft;
   }
   
-  .item, .skills {
-    background: #090909;
+  .item {
+    background: #141313;
     box-shadow: 0 4px 8px rgba(241, 237, 237, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -39,27 +39,79 @@
     animation-duration: 2.5s;  /* Slower animation duration */
     animation-fill-mode: both;
   }
-  
-  
-  .skills {
+
+  .skill-container{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    animation-name: slideInFromRight;
+    background-color: black;
+    z-index: -1;
   }
   
+  .skills {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(241, 237, 237, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    margin: 20px 0;
+    animation-duration: 2.5s;  /* Slower animation duration */
+    animation-fill-mode: both;
+    background-color: rgba(255, 255, 255, 0.607);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+  }
+  
+  /* Title styling */
+  .skills h1 {
+    padding-top: 20px;
+    font-size: 2rem; /* Adjust font size as needed */
+    color: purple;
+    text-decoration: underline; /* Adds an underline to the text */
+    text-decoration-color: black; /* Sets the underline color */
+    text-underline-offset: 5px; /* Adjusts the space between text and underline */
+  }
+  
+  
+  /* Container for the skill images */
+  .skill-item {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Center images horizontally */
+    gap: 30px; /* Space between images */
+  }
+  
+  /* Style for each skill image */
+  .skill-item img {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Maintain aspect ratio */
+    object-fit: contain; /* Maintain aspect ratio while fitting the image */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    transition: transform 0.3s ease;
+    mix-blend-mode: darken; 
+  }
+  
+  /* Optional: Hover effect for images */
+  .skill-item img:hover {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+  }
+
+ 
    .text {
     flex: 1;
     padding: 40px;
   }
   .item .text h1{
     color: purple;
-  }
-  .text h1, .skills h1 {
     margin-bottom: 20px;
     font-size: 2.5rem;
-    color: #f5eeee;
   }
+  
   
   .text p {
     font-size: 1.1rem;
@@ -112,15 +164,6 @@
     padding: 20px;
   }
   
-  .skills .skill-item h3 {
-    margin: 10px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #040404;
-    cursor: pointer;
-    transition: transform 1s ease-in-out; 
-}
 
 .skills .skill-item h3:hover {
     transform: scale(1.2);
@@ -141,6 +184,11 @@
   
     .text, .image {
       padding: 20px;
+    }
+
+    .skills h1{
+      width: 100%;
+      white-space: normal;
     }
   }
   

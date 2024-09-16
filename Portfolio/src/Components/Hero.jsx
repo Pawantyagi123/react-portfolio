@@ -8,6 +8,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "../Layout/Footer";
 import Navbar from "../Layout/Navbar";
 import NotFound from "./NotFound";
+import Skill from "./Skill";
 
 export default function Hero() {
   return (
@@ -17,6 +18,7 @@ export default function Hero() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skill/>}/>
           <Route path="/projects" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />

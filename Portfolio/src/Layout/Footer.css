@@ -24,7 +24,7 @@
     font-size: 18px;
     margin-bottom: 15px;
     text-transform: uppercase;
-    color: #ff9900;
+    color: purple;
   }
   
   .footer-section p,
@@ -68,7 +68,7 @@
   }
   
   .footer-section .footer-social-links a:hover {
-    background: #ff9900;
+    background: purple;
   }
   
   .footer-bottom {
@@ -78,4 +78,6 @@
     margin-top: 20px;
     font-size: 14px;
   }
-  
+  span{
+    color: rgb(229, 143, 72);
+  }

@@ -32,7 +32,7 @@ export default function Home() {
        
         <div className="social-links">
       <div className="hero-social-link">
-      <Tippy placement='right' content={<span style={{color: 'orange'}}>Linkdin</span>} >
+      <Tippy placement='right' content={<span style={{color: 'white'}}>Linkdin</span>} >
 
         <a href="https://www.linkedin.com/in/pawan-tyagi-196606270" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
@@ -41,7 +41,7 @@ export default function Home() {
       </div>
 
       <div className="hero-social-link">
-      <Tippy placement='right' content={<span style={{color: 'orange'}}>Twitter</span>} >
+      <Tippy placement='right' content={<span style={{color: 'white'}}>Twitter</span>} >
         <a href="https://x.com/Pawantyagi15426" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
           <FaTwitter />
         </a>
@@ -49,7 +49,7 @@ export default function Home() {
       </div>
 
       <div className="hero-social-link">
-      <Tippy placement='right' content={<span style={{color: 'orange'}}>Github</span>} >
+      <Tippy placement='right' content={<span style={{color: 'white'}}>Github</span>} >
         <a href="https://github.com/Pawantyagi123" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
@@ -57,7 +57,7 @@ export default function Home() {
       </div>
 
       <div className="hero-social-link">
-      <Tippy placement='right' content={<span style={{color: 'orange'}}>Dev.to</span>} >
+      <Tippy placement='right' content={<span style={{color: 'white'}}>Dev.to</span>} >
         <a href="https://dev.to/pawantyagi123" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
           <FaBookOpen />
         </a>

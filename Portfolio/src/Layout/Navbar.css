@@ -31,7 +31,7 @@ z-index: 2;
   color: white;
   text-decoration: none;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .NavLinks ul li a::after {
@@ -89,7 +89,7 @@ z-index: 2;
   text-decoration: none;
   display: block;
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .sidebar ul li a:hover {
@@ -135,14 +135,13 @@ z-index: 2;
   .hamburger-button {
     display: none;
   }
-
+.sidebar{
+  display: none;
+}
   .NavLinks {
     display: block;
   }
 }
-
-
-
 
 .close-icon {
   font-size: 3rem;
@@ -171,4 +170,13 @@ z-index: 2;
   .NavLinks {
     display: block;
   }
+}
+
+
+.socialnav-links{
+  display: flex;
+  background: #f9f6f6;
+  box-shadow: rgba(238, 238, 241, 0.545) 0px 0px 29px ;
+  border-radius: 5px;
+  margin: 5px;
 }

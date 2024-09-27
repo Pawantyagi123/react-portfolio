@@ -13,7 +13,7 @@ import github from "../Image/github.png"
 import git from "../Image/git.png"
 import vercel from "../Image/vercel.svg"
 import postman from "../Image/postman.png"
-import redux from "../Image/redux.jpeg"
+import redux from "../Image/redux.png"
 import UI from "../Image/ui.png"
 import './css/About.css'
 

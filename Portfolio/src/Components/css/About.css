@@ -40,31 +40,30 @@
     animation-fill-mode: both;
   }
 
-  .skill-container{
+   .skill-container{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
-    z-index: -1;
   }
-  
+   
   .skills {
     text-align: center;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(241, 237, 237, 0.1);
+    background-color: rgba(255, 255, 255, 0.429);
     border-radius: 10px;
     overflow: hidden;
     max-width: 900px;
     width: 100%;
-    margin: 20px 0;
-    animation-duration: 2.5s;  /* Slower animation duration */
-    animation-fill-mode: both;
-    background-color: rgba(255, 255, 255, 0.607);
+    margin: 20px auto;
+    background-color: none;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    gap: 20px;
+   z-index: -2;
   }
   
   /* Title styling */
@@ -93,7 +92,7 @@
     object-fit: contain; /* Maintain aspect ratio while fitting the image */
     border-radius: 8px; /* Optional: Add rounded corners */
     transition: transform 0.3s ease;
-    mix-blend-mode: darken; 
+    aspect-ratio: 3/2;
   }
   
   /* Optional: Hover effect for images */
@@ -101,7 +100,15 @@
     transform: scale(1.1); /* Slightly enlarge image on hover */
   }
 
- 
+  @media(max-width:500px){
+    .skills h1{
+      font-size: 1.5rem;
+    }
+    .skill-item img{
+      width: 60px;
+      height: 60px;
+    }
+  }
    .text {
     flex: 1;
     padding: 40px;

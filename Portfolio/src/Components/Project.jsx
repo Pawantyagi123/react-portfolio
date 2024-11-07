@@ -34,6 +34,9 @@ export default function Project() {
     );
   }
 
+  function truncateDescription(description, length = 190) {
+    return description.length > length ? `${description.slice(0, length)}...` : description;
+  }
   return (
     <div className='project-container'>
       <Fade direction="down" cascade>
@@ -47,7 +50,7 @@ export default function Project() {
             </div>
             <div className="text-item">
               <h1>{item.title}</h1>
-              <p>{item.description}</p>
+              <p>{truncateDescription(item.description)}</p>
               <Fade direction="right" cascade>
                 <div className="language">
                   {item.languages.map((language, index) => (

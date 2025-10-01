@@ -1,10 +1,9 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import toast from "react-hot-toast";
-import "../Components/css/Contact.css";
 import { IoPerson } from "react-icons/io5";
 import { MdEmail, MdMessage, MdPhone, MdSubject } from "react-icons/md";
-import contact from "../Image/contact.png"
+import contact from "../assets/Image/contact.png"
 import { Fade } from 'react-awesome-reveal';
 
 export default function Contact() {
@@ -42,7 +41,7 @@ export default function Contact() {
 
   return (
     
-    <div className='contact-container'>
+    <div className='contact-container' id='contact'>
       <Fade direction='down' cascade duration={2000}>
       <img src={contact} alt="" />
       </Fade>

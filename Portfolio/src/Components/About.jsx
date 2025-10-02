@@ -1,7 +1,7 @@
 import React from "react";
 import { FaDownload, FaCode, FaGraduationCap, FaMapMarkerAlt } from "react-icons/fa";
 import image from "../assets/Image/profile.png"
-
+import resume from "../assets/file/Resume 1.pdf"
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 py-20 px-6" id="about">
@@ -73,7 +73,7 @@ export default function About() {
             {/* Download Button */}
             <div className="pt-4">
               <a 
-                href="#" 
+                href={resume} 
                 download
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/50"
               >

@@ -61,6 +61,15 @@
       "description": "This Blog Project is a modern and user-friendly web application developed using React and Redux Toolkit and for backend I have use appwrite service like user authentication and database for storing the post data and also Tinymc for post description. It was a user-friendly and responsive website for both mobile and desktop. For css I have use Tailwind css",
       "languages": ["React", "Redux Toolkit", "Tailwind css"],
       "github": "https://github.com/Pawantyagi123/Blogproject"
+    },
+     {
+      "id": 8,
+      "image":"/Images/medicare.png",
+      "link": "https://hospital-theme.vercel.app/",
+      "title": "Hospital theme",
+      "description": "This theme is a modern and user-friendly web application developed using React   It was a user-friendly and responsive website for both mobile and desktop. For css I have use Tailwind css",
+      "languages": ["React", "Tailwind css"],
+      "github": "https://github.com/Pawantyagi123/hospital-theme"
     }
   ]
   

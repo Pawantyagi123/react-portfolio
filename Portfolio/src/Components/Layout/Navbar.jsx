@@ -34,9 +34,9 @@ export default function Navbar() {
               alt="logo"
               className="w-12 h-12 rounded-full border-2 border-emerald-400 shadow-md hover:scale-105 transition-transform duration-300"
             />
-            <h4 className="text-lg md:text-xl font-bold tracking-wide">
-              Pawan Tyagi
-            </h4>
+            <span className="text-lg md:text-xl font-bold tracking-wide">
+              Portfolio
+            </span>
           </NavLink>
 
           {/* Desktop Links */}
@@ -75,6 +75,7 @@ export default function Navbar() {
 
           {/* Mobile Toggle Button */}
           <button
+          aria-label="navbaar-open-btn"
             onClick={handleNavbar}
             className="block md:hidden hover:text-emerald-400 transition"
           >
@@ -91,6 +92,7 @@ export default function Navbar() {
       >
         <button
     onClick={handleNavbar}
+    aria-label="navbar-close-btn"
     className="absolute top-4 right-4 text-white hover:text-emerald-400 transition"
   >
     <RxCross2 size={28} />
@@ -131,6 +133,7 @@ export default function Navbar() {
               <a
                 href="https://www.linkedin.com/in/pawan-tyagi-196606270"
                 target="_blank"
+                aria-label="linkedin-link"
                 className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center hover:scale-110 transition-transform shadow-md"
               >
                 <FaLinkedin />
@@ -141,6 +144,7 @@ export default function Navbar() {
               <a
                 href="https://x.com/Pawantyagi15426"
                 target="_blank"
+                aria-label="twitter-link"
                 className="w-10 h-10 rounded-full bg-gradient-to-br from-sky-400 to-sky-600 flex items-center justify-center hover:scale-110 transition-transform shadow-md"
               >
                 <FaTwitter />
@@ -151,21 +155,23 @@ export default function Navbar() {
               <a
                 href="https://github.com/Pawantyagi123"
                 target="_blank"
+                aria-label="github-link"
                 className="w-10 h-10 rounded-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center hover:scale-110 transition-transform shadow-md"
               >
                 <FaGithub />
               </a>
             </Tippy>
 
-            <Tippy content={<span className="text-white">Dev.to</span>}>
+            {/* <Tippy content={<span className="text-white">Dev.to</span>}>
               <a
                 href="https://dev.to/pawantyagi123"
                 target="_blank"
+                aria-label="dev-tool-link"
                 className="w-10 h-10 rounded-full bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center hover:scale-110 transition-transform shadow-md"
               >
                 <FaBookOpen />
               </a>
-            </Tippy>
+            </Tippy> */}
           </div>
         </div>
       </div>

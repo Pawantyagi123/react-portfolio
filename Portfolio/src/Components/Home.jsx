@@ -81,6 +81,7 @@ export default function Home() {
               <a 
                 href="https://www.linkedin.com/in/pawan-tyagi-196606270" 
                 target="_blank" 
+                aria-label="linkedin-link"
                 rel="noopener noreferrer"
                 className="group relative w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/20 to-blue-600/20 border border-blue-500/30 text-blue-400 hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50"
               >
@@ -93,6 +94,7 @@ export default function Home() {
               <a 
                 href="https://x.com/Pawantyagi15426" 
                 target="_blank" 
+                aria-label="twitter-link"
                 rel="noopener noreferrer"
                 className="group relative w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-br from-sky-500/20 to-sky-600/20 border border-sky-500/30 text-sky-400 hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-sky-500/50"
               >
@@ -105,6 +107,7 @@ export default function Home() {
               <a 
                 href="https://github.com/Pawantyagi123" 
                 target="_blank" 
+                aria-label="github-link"
                 rel="noopener noreferrer"
                 className="group relative w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-br from-gray-500/20 to-gray-600/20 border border-gray-500/30 text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-gray-500/50"
               >
@@ -113,7 +116,7 @@ export default function Home() {
               </a>
             </Tippy>
 
-            <Tippy placement='right' content={<span style={{color: 'white'}}>Dev.to</span>}>
+            {/* <Tippy placement='right' content={<span style={{color: 'white'}}>Dev.to</span>}>
               <a 
                 href="https://dev.to/pawantyagi123" 
                 target="_blank" 
@@ -123,7 +126,7 @@ export default function Home() {
                 <FaBookOpen className="text-2xl relative z-10" />
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
-            </Tippy>
+            </Tippy> */}
           </div>
         </div>
 

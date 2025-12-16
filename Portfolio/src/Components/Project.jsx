@@ -55,9 +55,9 @@ export default function Project() {
         {/* Header */}
         <Fade direction="down" cascade>
           <div className="text-center mb-16 space-y-4">
-            <h1 className="text-5xl md:text-6xl font-bold text-white">
+            <h2 className="text-5xl md:text-6xl font-bold text-white">
               My <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Projects</span>
-            </h1>
+            </h2>
             <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto"></div>
             <p className="text-gray-400 text-lg mt-4 max-w-2xl mx-auto">
               A showcase of my recent work and personal projects
@@ -109,6 +109,7 @@ export default function Project() {
                     <a 
                       href={item.link} 
                       target="_blank" 
+                      aria-label={item.title}
                       rel="noreferrer"
                       className="w-10 h-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg flex items-center justify-center text-white hover:bg-blue-500 hover:border-blue-500 transition-all duration-300 hover:scale-110"
                     >
@@ -118,6 +119,7 @@ export default function Project() {
                       href={item.github} 
                       target="_blank" 
                       rel="noreferrer"
+                       aria-label={item.title}
                       className="w-10 h-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg flex items-center justify-center text-white hover:bg-purple-500 hover:border-purple-500 transition-all duration-300 hover:scale-110"
                     >
                       <FaGithub className="text-sm" />
@@ -154,6 +156,7 @@ export default function Project() {
                         href={item.link} 
                         target="_blank" 
                         rel="noreferrer"
+                        aria-label='live-demo'
                         className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-semibold rounded-lg hover:from-blue-500 hover:to-purple-500 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50 group/btn"
                       >
                         <span>Live Demo</span>
@@ -163,6 +166,7 @@ export default function Project() {
                         href={item.github} 
                         target="_blank" 
                         rel="noreferrer"
+                        aria-label='github-link'
                         className="px-4 py-2.5 bg-slate-700/50 border border-slate-600 text-white text-sm font-semibold rounded-lg hover:bg-slate-700 hover:border-slate-500 transition-all duration-300 flex items-center justify-center group/btn"
                       >
                         <FaGithub className="text-lg group-hover/btn:rotate-12 transition-transform duration-300" />

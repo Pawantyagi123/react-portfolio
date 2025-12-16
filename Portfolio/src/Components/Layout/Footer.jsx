@@ -59,6 +59,7 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/pawan_tyagi2002/"
                 target="_blank"
+                aria-label="instagram-link"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-purple-500/50"
               >
@@ -67,6 +68,7 @@ export default function Footer() {
               <a
                 href="https://x.com/Pawantyagi15426"
                 target="_blank"
+                aria-label="twitter-link"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-blue-500/50"
               >
@@ -75,6 +77,7 @@ export default function Footer() {
               <a
                 href="https://www.facebook.com/pawan.tyagi.9480"
                 target="_blank"
+                aria-label="facebook-link"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-blue-600/50"
               >
@@ -83,6 +86,7 @@ export default function Footer() {
               <a
                 href="https://www.linkedin.com/in/pawan-tyagi-196606270"
                 target="_blank"
+                aria-label="linkedin-link"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-blue-700/50"
               >

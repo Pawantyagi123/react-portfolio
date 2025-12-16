@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://pawantyagi-developer.vercel.app/sitemap.xml

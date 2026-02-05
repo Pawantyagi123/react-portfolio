@@ -72,7 +72,7 @@
       "github": "https://github.com/Pawantyagi123/hospital-theme"
     },
     {
-      "id": 8,
+      "id": 9,
       "image":"/Images/cropaze.png",
       "link": "https://www.cropaze.com/",
       "title": "Cropaze Farmer Tool",
@@ -80,7 +80,7 @@
       "languages": ["React", "Tailwind css, Redux Toolkit, Api integration"]
     },
      {
-      "id": 9,
+      "id": 10,
       "image":"/Images/aiiqa.png",
       "link": "https://www.aiiqa.com/",
       "title": "Aiiqa Innovations",

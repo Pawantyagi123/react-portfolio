@@ -34,9 +34,6 @@ export default function Navbar() {
               alt="logo"
               className="w-12 h-12 rounded-full border-2 border-emerald-400 shadow-md hover:scale-105 transition-transform duration-300"
             />
-            <span className="text-lg md:text-xl font-bold tracking-wide">
-              Portfolio
-            </span>
           </NavLink>
 
           {/* Desktop Links */}
@@ -79,24 +76,17 @@ export default function Navbar() {
             onClick={handleNavbar}
             className="block md:hidden hover:text-emerald-400 transition"
           >
-            <TbMenuDeep size={28} />
+           {show ? <RxCross2 size={28} /> : <TbMenuDeep size={28} />}
           </button>
         </div>
       </nav>
 
       {/* Sidebar Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 sm:w-1/2 md:w-64 bg-gray-900/95 backdrop-blur-lg text-white z-50 transform transition-transform duration-500 ease-in-out ${
+        className={`fixed top-16 right-0 h-full w-full sm:w-1/2 md:w-64 bg-gray-900/95 backdrop-blur-lg text-white z-50 transform transition-transform duration-500 ease-in-out ${
           show ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <button
-    onClick={handleNavbar}
-    aria-label="navbar-close-btn"
-    className="absolute top-4 right-4 text-white hover:text-emerald-400 transition"
-  >
-    <RxCross2 size={28} />
-  </button>
         <div className="p-6 mt-16">
           <ul className="flex flex-col items-start gap-6 text-lg">
             {[

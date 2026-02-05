@@ -87,7 +87,7 @@ export default function About() {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
           {[
             { number: "22", label: "Years Old" },
             { number: "BCA", label: "Degree" },
@@ -104,7 +104,7 @@ export default function About() {
               <div className="text-gray-400 text-sm">{stat.label}</div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       <style>{`

@@ -1,7 +1,9 @@
 import React from "react";
 import { FaDownload, FaCode, FaGraduationCap, FaMapMarkerAlt } from "react-icons/fa";
 import image from "../assets/Image/profile.png"
-import resume from "../assets/file/Resume 1.pdf"
+import resume from "../assets/file/Resume (2).pdf"
+
+
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 py-20 px-6" id="about">

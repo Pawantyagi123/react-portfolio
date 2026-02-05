@@ -70,6 +70,22 @@
       "description": "This theme is a modern and user-friendly web application developed using React   It was a user-friendly and responsive website for both mobile and desktop. For css I have use Tailwind css",
       "languages": ["React", "Tailwind css"],
       "github": "https://github.com/Pawantyagi123/hospital-theme"
+    },
+    {
+      "id": 8,
+      "image":"/Images/cropaze.png",
+      "link": "https://www.cropaze.com/",
+      "title": "Cropaze Farmer Tool",
+      "description": "This theme is a modern and user-friendly web application developed using React. It was a user-friendly and responsive website for both mobile and desktop. It was a tool that will help farmer to manage their crops and increase productivity and there expense in seeds, fertilizer and etc. This is my real industry project that I developed while working with Aiiqa Innovations Pvt Ltd.",
+      "languages": ["React", "Tailwind css, Redux Toolkit, Api integration"]
+    },
+     {
+      "id": 9,
+      "image":"/Images/aiiqa.png",
+      "link": "https://www.aiiqa.com/",
+      "title": "Aiiqa Innovations",
+      "description": "This theme is a modern and user-friendly web application developed using React. It was a user-friendly and responsive website for both mobile and desktop. This is my real industry project that I developed while working with Aiiqa Innovations Pvt Ltd.",
+      "languages": ["Nextjs", "Tailwind css, Api integration"]
     }
   ]
   
